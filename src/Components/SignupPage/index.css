@@ -7,3 +7,44 @@
     background-size: cover;
     min-height: 100vh;
 }
+
+.signup-form{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 0;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.label{
+    font-family:"roboto";
+    margin-bottom: 10px;
+}
+
+.sign-upform-input{
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #000000;
+    padding: 6px;
+    font-family: "roboto";
+}
+
+.select-bar{
+    margin-bottom: 10px;
+    width: 46%;
+}
+
+.gender-text{
+    align-self: flex-start
+}
+
+.signup-btn{
+    border:0;
+    border-radius: 6px;
+    background-color:#524f4d;
+    color: #ffffff;
+    padding: 8px;
+    width: 100px;
+}

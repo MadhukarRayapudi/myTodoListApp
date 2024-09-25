@@ -59,10 +59,11 @@ const SignupPage = () => {
 
   return (
     <div className="signup-page">
-      <h1 className="signup-page-heading">Signup Page</h1>
-      <form onSubmit={handleSubmit}>
+      <h1 className="signup-page-heading">Signup Here</h1>
+      <form onSubmit={handleSubmit} className = "signup-form">
         <div>
-          <label htmlFor="username">Username:</label>
+          <label htmlFor="username" className = "label">Username:</label>
+          <br/>
           <input
             type="text"
             id="username"
@@ -73,41 +74,47 @@ const SignupPage = () => {
           />
         </div>
         <div>
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password" className = "label">Password:</label>
+          <br/>
           <input
             type="password"
             id="password"
             name="password"
             value={password}
             onChange={handleChange}
+            className = "sign-upform-input"
             required
           />
         </div>
         <div>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name" className = "label">Name:</label>
+          <br/>
           <input
             type="text"
             id="name"
             name="name"
             value={name}
             onChange={handleChange}
+            className = "sign-upform-input"
             required
           />
         </div>
         <div>
-          <label htmlFor="gender">Gender:</label>
+          <label htmlFor="gender" className = "label gender-text">Gender:</label>
+          <br/>
           <select
             id="gender"
             name="gender"
             value={gender}
             onChange={handleChange}
+            className = "sign-upform-input select-bar"
           >
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
           </select>
         </div>
-        <button type="submit">Sign Up</button>
+        <button type="submit" className = "signup-btn">Sign Up</button>
       </form>
     </div>
   );
