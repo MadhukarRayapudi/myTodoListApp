@@ -1,0 +1,9 @@
+.signup-page{
+    background-color: #524f4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    min-height: 100vh;
+}
